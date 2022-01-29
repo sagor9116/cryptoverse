@@ -30,18 +30,18 @@ const App = () => {
 								element={<CryptoCurrencies />}
 							/>
 							<Route
-								path="/cryptocurrencies/:id"
+								path="/cryptocurrencies/:coinId"
 								element={<CryptoDetails />}
 							/>
 						</Routes>
 					</div>
 				</Layout>
-				{/* <div className="footer">
+				<div className="footer">
 					<Typography.Title
 						level={5}
 						style={{ color: "white", textAlign: "center" }}>
 						Copyright © 2021
-						<Link to="/">Cryptoverse Inc.</Link> <br />
+						<Link to="/"> Cryptoverse Inc.</Link> <br />
 						All Rights Reserved.
 					</Typography.Title>
 					<Space>
@@ -49,7 +49,7 @@ const App = () => {
 						<Link to="/exchanges">Exchanges</Link>
 						<Link to="/news">News</Link>
 					</Space>
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
