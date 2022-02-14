@@ -29,6 +29,7 @@ import {
 
 import LineChart from "./LineChart";
 
+
 const { Title, Text } = Typography;
 const { Option } = Select;
 
@@ -41,8 +42,9 @@ const CryptoDetails = () => {
 		timePeriod,
 	});
 
-	console.log(coinHistoryData);
 	const cryptoDetailsData = data?.data?.coin;
+	console.log(cryptoDetailsData)
+	console.log('coinHistory: ', coinHistoryData)
 
 	if (isFetching) return "Loading...";
 
@@ -108,8 +110,6 @@ const CryptoDetails = () => {
 			icon: <ExclamationCircleOutlined />,
 		},
 	];
-	console.log(coinsOtherValueStatistics[0].value);
-	console.log(cryptoDetailsData);
 
 	return (
 		<Col className="coin-detail-container">
@@ -121,6 +121,7 @@ const CryptoDetails = () => {
 					{cryptoDetailsData.name} live price in US Dollar (USD). View
 					value statistics, market cap and supply.
 				</p>
+				
 			</Col>
 			<Select
 				defaultValue={timePeriod}
@@ -139,6 +140,8 @@ const CryptoDetails = () => {
 				coinName={cryptoDetailsData.name}
 				coinPrice={millify(cryptoDetailsData.price)}
 			/>
+
+			
 
 			<Col className="stats-container">
 				<Col className="coin-value-statistics">

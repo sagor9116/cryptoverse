@@ -1,73 +1,46 @@
 import React from "react";
-import { Chart as ChartJS } from "chart.js/auto";
+import { Chart as ChartJS, LineElement,PointElement,CategoryScale,LinearScale } from "chart.js";
 
 import { Line } from "react-chartjs-2";
 import { Row, Col, Typography } from "antd";
-
+import millify from "millify";
 const { Title } = Typography;
 
+ChartJS.register(LineElement,PointElement,CategoryScale,LinearScale)
+
 const LineChart = ({ coinHistoryData, coinName, coinPrice }) => {
-	const coinPriceHistory = coinHistoryData?.data?.history.map(
-		(price) => price?.price
+	console.log(coinHistoryData)
+	const coinPriceHistory = coinHistoryData?.data?.history?.map(
+		(priceHistory) => priceHistory?.price
+	);
+	
+	const coinTimeStampHistory = coinHistoryData?.data?.history.map((timeHistory) =>
+		new Date(timeHistory?.timestamp).toLocaleDateString()
 	);
 
-	const coinTimeStampHistory = coinHistoryData?.data?.history.map((time) =>
-		new Date(time?.timestamp).toLocaleDateString()
-	);
-
-	console.log(coinHistoryData?.data?.history.map((price) => price.price));
-
-	console.log(
-		coinHistoryData?.data?.history.map((date) =>
-			new Date(date.timestamp).toLocaleDateString()
-		)
-	);
-
-	// const coinPriceHistory = [];
-	// const coinTimeStampHistory = [];
-
-	// for (let i = 0; i < coinHistoryData?.data?.history?.length; i += 1) {
-	// 	coinPriceHistory.push(coinHistoryData?.data?.history[i].price);
-	// }
-
-	// console.log(coinPriceHistory);
-
-	// for (let i = 0; i < coinHistoryData?.data?.history?.length; i += 1) {
-	// 	coinTimeStampHistory.push(
-	// 		new Date(
-	// 			coinHistoryData?.data?.history[i].timestamp
-	// 		).toLocaleDateString()
-	// 	);
-	// }
-
+	// console.log('coinPriceHistory : ', coinPriceHistory);
 	// console.log(coinTimeStampHistory);
 
-	const data = {
-		labels: coinTimeStampHistory,
-		datasets: [
-			{
-				label: "Price In USD",
-				data: coinPriceHistory,
-				fill: false,
-				backgroundColor: "#0071bd",
-				borderColor: "#0071bd",
-			},
-		],
-	};
 
-	const options = {
-		scales: {
-			yAxes: [
-				{
-					beginAtZero: true,
-					ticks: {
-						max: 10000000,
-						min: 0,
-					},
-				},
-			],
-		},
-	};
+
+	const data = {
+// x-axis label values
+labels: coinTimeStampHistory,
+datasets: [
+  {
+	label: "# of Calories Lost",
+	// y-axis data plotting values
+	data: coinPriceHistory,
+	fill: false,
+	borderWidth:4,
+	backgroundColor: "rgb(255, 99, 132)",
+	borderColor:'green',
+	responsive:true
+  },
+],
+};
+
+
 
 	return (
 		<>
@@ -82,7 +55,7 @@ const LineChart = ({ coinHistoryData, coinName, coinPrice }) => {
 					</Title>
 				</Col>
 			</Row>
-			<Line data={data} options={options} />
+			<Line data={data} />
 		</>
 	);
 };
