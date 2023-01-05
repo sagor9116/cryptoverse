@@ -19,7 +19,7 @@ CRYPTOVERSE is all about the news of crypt-currencies. Users can get all the use
   - [Useful resources](#useful-resources)
 - [5. Author](#author) 🙋🏻
 
-# <a>**2. Overview 🎯**</a>
+# Overview
 
 ## The challenges
 
@@ -130,7 +130,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Website URL: <https://cryptoversev2.netlify.app/news/>
 
-# **3. Screenshots 📷**
+# Screenshots
 
 ## Desktop View
 
@@ -205,7 +205,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# **4. Author 🙋🏻**
+# Auhtor
 
 - Linkedin : [sagorroy](https://www.linkedin.com/in/sagorroy/)
 
