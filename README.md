@@ -19,7 +19,7 @@ CRYPTOVERSE is all about the news of crypt-currencies. Users can get all the use
   - [Useful resources](#useful-resources)
 - [5. Author](#author) 🙋🏻
 
-4. # Overview
+# 4. # Overview
 
 ## The challenges
 
