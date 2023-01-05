@@ -138,7 +138,7 @@ Website URL: <https://cryptoversev2.netlify.app/news/>
 
 ## Mobile View
 
-# **4. My process ✨**
+#  My process
 
 ## Built With
 
