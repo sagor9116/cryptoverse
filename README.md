@@ -41,7 +41,7 @@ users should be able to
 
 - View the optimal layout for the site depending on their device's screen size
 
-## Images
+![cryptoversev2-desktop](https://user-images.githubusercontent.com/31893862/210783915-7d8d6792-45e7-4f6d-89ac-e4e8d273e9dd.png)
 
 ## How to run the projects
 
@@ -133,10 +133,15 @@ Website URL: <https://cryptoversev2.netlify.app/news/>
 # Screenshots
 
 ## Desktop View
+![cryptoversev2-desktop](https://user-images.githubusercontent.com/31893862/210783915-7d8d6792-45e7-4f6d-89ac-e4e8d273e9dd.png)
 
 ## Tablet View
+![cryptoversev2-tablet](https://user-images.githubusercontent.com/31893862/210784500-8f1353c1-997b-46f3-9fb0-4d3ea52d073c.png)
+
 
 ## Mobile View
+![cryptoversev2-mbl](https://user-images.githubusercontent.com/31893862/210784704-9250a924-3c83-41cb-a535-9afae0ce47c5.png)
+
 
 #  My process
 
