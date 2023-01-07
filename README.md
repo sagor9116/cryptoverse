@@ -128,7 +128,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Links
 
-Website URL: <https://cryptoversev2.netlify.app/news/>
+Website URL: <https://cryptoversev2.netlify.app/>
 
 # Screenshots
 
